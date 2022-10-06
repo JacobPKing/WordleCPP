@@ -23,7 +23,7 @@ vector<string> readFile(string fname)
     }
     else
     {
-        cout << "Unable to open file";    
+        cout << "Unable to open file" << endl;    
     }
     return answers;
 }
@@ -54,7 +54,7 @@ bool validword(string potanswer, string guess, string colors)
         {
             if (potanswer.find(guess[i]) != string::npos)
             {
-                //cout << "failed on -";
+                //cout << "failed on -" << endl;
                 return false;
             } 
         }
@@ -165,6 +165,7 @@ int main()
     //{
         //cout << guesses[i] << ": " << possibles[guesses[i]] << endl;
     //}
-   //validword("brain","groan","-o-vo");
-   //cout << genColors("coyly","crawl") << endl;
+    //validword("brain","groan","-o-vo");
+    //cout << genColors("coyly","crawl") << endl;
+    return 0;
 }
